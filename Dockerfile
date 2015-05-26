@@ -16,6 +16,7 @@ ADD supervisord.conf /etc/supervisord.conf
 VOLUME ["/app"]
 WORKDIR /app
 ADD start.sh /
+ADD generate.sh /
 # Expose the default port
 EXPOSE 9778
 # Launch, passing arguments
